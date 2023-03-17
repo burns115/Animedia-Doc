@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chathura&display=swap" rel="stylesheet">
     <title>Animedia Documents</title>
     <script>
         let slideIndex = 1;
@@ -38,22 +41,81 @@
 </head>
 <body>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Nunito:wght@200&display=swap');
+
+        body{
+            background-color: black;
+
+        }
+
         a{
             text-decoration: none;
-            color:rgb(102, 102, 255)
+            color:rgb(214, 214, 214);
+            font-size: x-large;
+
         }
 
-        container{
-            padding: 10%;
+        a:hover{
+            color:#37C3FF;
         }
 
-        * {box-sizing:border-box}
+        p{
+            color:white;
+            font-size: x-large;
+
+        }
+
+        .title {
+            font-size: 8rem;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #37C3FF;
+            color: #F4F9E9;
+            margin-top: -5%;
+            margin-bottom: 0;
+            height:150px;
+        }
+        .container{
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-bottom: 10%;
+            padding-top: 5%;
+        }
+
+        hr{
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+
+        title-hr{
+            margin-top: 0;
+        }
+
+        * {
+            box-sizing:border-box;
+            text-align: center;
+            font-family: 'Chathura', sans-serif;
+        }
+
+        h2{
+            text-align: center;
+            color:white;
+            font-size: -webkit-xxx-large;
+            margin: -2%;
+        }
+
+        .code-links{
+            align-content: center;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
 
         /* Slideshow container */
         .slideshow-container {
         width: 50%;
         position: relative;
         margin: auto;
+        margin-top: 2%;
         }
 
         /* Hide the images by default */
@@ -81,6 +143,10 @@
         .next {
         right: 0;
         border-radius: 3px 0 0 3px;
+        }
+
+        .prev{
+            left: 0;
         }
 
         /* On hover, add a black background color with a little bit see-through */
@@ -138,11 +204,18 @@
     </style>
 
     <div class="container">
+
+        <h1 class="title">Animedia</h1>
+
+        <hr class="title-hr">
+
         <h2>The People behind Animedia</h2>
 
         <p><b>Ethan Carrera</b> - Helped develop a huge portion of the site and was the driving force of how the site looked in the end. </p>
 
         <p><b>Ryan Burns</b> - Worked on development of the website where it was needed. Took charge with a lot of the php related code with some help of course.</p>
+
+        <hr>
 
         <div><h2>Documents</h2>
             <a href="https://cs.neit.edu/~rburns/Capstone/login.php">Capstone</a><br>
@@ -153,6 +226,7 @@
         </div>
         
         <br>
+        <hr>
 
         <h2>Site Images</h2>
 
@@ -261,7 +335,9 @@
             <span class="dot" onclick="currentSlide(11)"></span>
             <span class="dot" onclick="currentSlide(12)"></span>
             <span class="dot" onclick="currentSlide(13)"></span>
-        </div>
+        </div><br>
+
+        <hr>
 
         <div class="code-links">
             <h2>Code Links</h2>
